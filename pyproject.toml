@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hawk_egress_probe"
+version = "0.0.1"
+description = "Probe per-service egress in a two-service k8s sandbox"
+requires-python = ">=3.11"
+dependencies = ["inspect-ai"]
+
+[project.entry-points.inspect_ai]
+hawk_egress_probe = "hawk_egress_probe"
